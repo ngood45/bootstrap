@@ -1,0 +1,191 @@
+$purple: #6f5499;
+$purpleDark: #563d7c;
+$purpleLight: #cdbfe3;
+
+
+%clearfix {
+	&:after {
+		display: block;
+		visibility: hidden;
+		clear: both;
+
+		height: 0;
+
+		font-size: 0;
+
+		content: ' ';
+	}
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.wrapper {
+	&--full-width {
+		
+	}
+	&--fixed-width {
+		margin-left: auto;
+		margin-right: auto;
+		width: 990px;
+	}
+}
+
+.banner {
+	background-color: #0275d8;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	font-weight: bold;
+}
+
+
+.menu {
+	height: 50px;
+	line-height: 50px;
+	&__left {
+		float: left;
+	}
+	&__right {
+		float: right;
+	}
+	&__logo {
+		color: $purpleDark;
+		font-size: 18px;
+		font-weight: bold;
+		float: left;
+
+	}
+	&__item {
+		color: $purpleDark;
+		float: left;
+		margin-left: 30px;
+
+	}
+
+}
+
+.hero {
+	background-color: $purple;
+	color: white;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	text-align: center;
+	&__icon {
+		font-size: 110px;
+		font-weight: bold;
+		border: 1px solid $purpleLight;
+		height: 144px;
+		width: 144px;
+		margin-left: auto;
+		margin-right: auto;
+		line-height: 144px;
+		border-radius: 25px;
+	}
+	&__text {
+		font-size: 30px;
+		margin-top: 36px;
+		margin-bottom: 36px;
+	}
+	&__btn {
+		font-size: 20px;
+		border: 1px solid $purpleLight;
+		border-radius: 6px;
+		line-height: 60px;
+		width: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		
+		&:hover {
+			background-color: white;
+			color: $purpleDark;
+			border-color: white;
+		}
+	}
+	
+	&__version {
+		margin-top: 20px;
+		font-size: 14px;
+		color: $purpleLight;
+	}
+}
+
+.featurestop {
+	&__phrase {
+		color: black;
+		font-size: 40px;
+		text-align: center;
+		margin-top: 100px;
+	}
+	&__desc {
+		text-align: center;
+		font-size: 20px;
+		color: black;
+		line-height: 25px;
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+	}
+}
+
+
+
+.features {
+	@extend %clearfix;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	&__item {
+		background-color: red;
+		float: left;
+		width: 33.33%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	&__image {
+		
+	}
+	&__title {
+		font-size: 20px;
+		text-align: center;
+	}
+	&__desc {
+		text-align: center;
+		line-height: 20px;
+		margin-top: 10px;
+	}
+}
+
+.featuresbottom {
+	clear: both;
+	&__closing {
+		text-align: center;
+		font-size: 20px;
+	}
+	&__btn {
+		color: $purpleDark;
+		border: 1px solid $purpleDark;
+		border-radius: 5px;
+		text-align: center;
+		width: 250px;
+		line-height: 50px;
+		font-size: 18px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 15px;
+		&:hover {
+			background-color: $purple;
+			border-color: white;
+			color: white;
+			font-weight: bold;
+		}
+	}
+}
