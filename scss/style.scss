@@ -129,7 +129,7 @@ body {
 		text-align: center;
 		font-size: 20px;
 		color: black;
-		line-height: 25px;
+		line-height: 30px;
 		width: 900px;
 		margin-left: auto;
 		margin-right: auto;
@@ -144,18 +144,19 @@ body {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	&__item {
-		background-color: red;
 		float: left;
 		width: 33.33%;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
 	&__image {
-		
+		img {
+			width: 100%;
+		}
 	}
 	&__title {
-		font-size: 20px;
-		text-align: center;
+		font-size: 20px
+;		text-align: center;
 	}
 	&__desc {
 		text-align: center;
@@ -180,7 +181,7 @@ body {
 		font-size: 18px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 15px;
+		margin-top: 30px;
 		&:hover {
 			background-color: $purple;
 			border-color: white;
@@ -191,8 +192,18 @@ body {
 }
 
 .projectstop {
-	.phrase {
+		text-align: center;
+		font-size: 20px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	&__phrase {
+		color: black;
 		font-size: 40px;
-		font-weight: bold;
+		text-align: center;
+	}
+	&__desc {
+		text-align: center;
+		line-height: 30px;
+		margin-top: 10px;
 	}
 }
