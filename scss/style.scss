@@ -224,4 +224,52 @@ body {
 
 .projectsbottom {
 	clear: both;
+	&__desc {
+	font-size: 22px;
+	text-align: center;
+	margin-top: 75px;
+	}
+	&__btn {
+		color: $purpleDark;
+		border: 1px solid $purpleDark;
+		border-radius: 5px;
+		text-align: center;
+		width: 250px;
+		line-height: 50px;
+		font-size: 18px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30px;
+		&:hover {
+			background-color: $purple;
+			border-color: white;
+			color: white;
+			font-weight: bold; 
+	}
 }
+}
+
+.footer {
+	height: 50px;
+	line-height: 50px;
+	margin-top: 75px;
+	background-color: grey;
+	height: 200px;
+	}
+	&__wrapper {
+		float: left;
+	}
+	&__item {
+		color: $purpleDark;
+		font-size: 18px;
+		font-weight: bold;
+		float: left;
+
+	}
+	&__item2 {
+		color: $purpleDark;
+		float: left;
+		margin-left: 30px;
+
+	}
+
