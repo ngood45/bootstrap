@@ -207,3 +207,21 @@ body {
 		margin-top: 10px;
 	}
 }
+
+.projects {
+	@extend %clearfix;
+	&__image {
+
+		img {
+		height: 230px;
+		width: 230px;
+		float: left;
+		padding-left: 1px;
+		padding-right: 1px;
+		}
+	}
+}	
+
+.projectsbottom {
+	clear: both;
+}
