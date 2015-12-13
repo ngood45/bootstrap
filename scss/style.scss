@@ -1,7 +1,8 @@
 $purple: #6f5499;
 $purpleDark: #563d7c;
 $purpleLight: #cdbfe3;
-
+$greyDark: #2a2730;
+$greyLight: #99979c;
 
 %clearfix {
 	&:after {
@@ -249,27 +250,39 @@ body {
 }
 }
 
+
+
 .footer {
 	height: 50px;
 	line-height: 50px;
+	background-color: $greyDark;
 	margin-top: 75px;
-	background-color: grey;
-	height: 300px;
-	}
-	&__wrapper {
+	&__top {
 		float: left;
 	}
-	&__item {
-		color: $purpleDark;
-		font-size: 18px;
-		font-weight: bold;
-		float: left;
+	&__bottom {
+		background-color: $greyDark;
+		width: 100%;
+	}
 
-	}
-	&__item2 {
-		color: $purpleDark;
+	&__item {
+		color: white;
 		float: left;
 		margin-left: 30px;
+		font-size: 14px;
 
 	}
+	&__desc {
+		@extend %clearfix;
+		color: $greyLight;
+		clear: both;
+		font-size: 14px;
+		padding-left: 30px;
+		padding-right: 30px;
 
+	}
+	&__crinfo {
+		color: $greyLight;
+		margin-left: 30px;
+	}
+}
