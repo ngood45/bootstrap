@@ -253,24 +253,25 @@ body {
 
 
 .footer {
-	height: 50px;
-	line-height: 50px;
 	background-color: $greyDark;
 	margin-top: 75px;
 	&__top {
 		float: left;
 	}
-	&__bottom {
-		background-color: $greyDark;
-		width: 100%;
-	}
+
 
 	&__item {
 		color: white;
 		float: left;
 		margin-left: 30px;
 		font-size: 14px;
+		margin-top: 40px;
 
+	}
+
+	&__bottom {
+		background-color: $greyDark;
+		width: 100%;
 	}
 	&__desc {
 		@extend %clearfix;
@@ -279,10 +280,13 @@ body {
 		font-size: 14px;
 		padding-left: 30px;
 		padding-right: 30px;
+		padding-top: 30px;
 
 	}
 	&__crinfo {
 		color: $greyLight;
 		margin-left: 30px;
+		padding-top: 8px;
+		padding-bottom: 30px;
 	}
 }
